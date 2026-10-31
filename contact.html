@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact Us | Zavora</title>
+<meta name="description" content="Get in touch with Zavora for questions or feedback.">
+<meta property="og:title" content="Contact Us | Zavora">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div class="wrap nav">
+  <a class="logo" href="index.html">Zav<span>ora</span></a>
+  <nav><ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html">Shop All</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul></nav>
+</div></header>
+<main class="wrap page">
+  <h1>Contact Us</h1>
+  <p>Questions, feedback or business enquiries? Email us at <strong>YOUR-EMAIL@example.com</strong> (replace this with your real email).</p>
+  <p>We are not the seller of any product. For orders, delivery, returns or refunds, please contact the partner store you bought from.</p>
+  <!-- Replace YOUR-EMAIL@example.com below with your real email. Opens the visitor's mail app. -->
+  <form class="contact" action="mailto:safanasrin471@gmail.com" method="post" enctype="text/plain">
+    <input name="name" placeholder="Your name" required>
+    <input name="email" type="email" placeholder="Your email" required>
+    <textarea name="message" rows="5" placeholder="Your message" required></textarea>
+    <button class="btn" type="submit">Send Message</button>
+  </form>
+</main>
+<footer><div class="wrap">
+  <div class="cols">
+    <div><h4>Zavora</h4><p>A shopping discovery website. We are not a store; purchases happen on partner stores.</p></div>
+    <div><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+    <div><h4>Legal</h4><ul><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms &amp; Conditions</a></li><li><a href="affiliate-disclosure.html">Affiliate Disclosure</a></li></ul></div>
+  </div>
+  <p class="disc">As an affiliate, we may earn a commission from qualifying purchases made through links on this site, at no extra cost to you. &copy; <span id="y"></span> Zavora.</p>
+</div></footer>
+<script>document.getElementById("y").textContent=new Date().getFullYear()</script>
+</body>
+</html>

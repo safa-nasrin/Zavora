@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zavora | Shopping Discovery</title>
+<meta name="description" content="Discover curated fashion, beauty, home and lifestyle picks. We may earn a commission from qualifying purchases.">
+<meta property="og:title" content="Zavora | Shopping Discovery">
+<meta property="og:description" content="Discover curated fashion, beauty, home and lifestyle picks.">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="style.css">
+<script src="products.js" defer></script>
+</head>
+<body>
+
+<header><div class="wrap nav">
+  <a class="logo" href="index.html">Zav<span>ora</span></a>
+  <nav><ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html">Shop All</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul></nav>
+  <input id="siteSearch" class="search" type="search" placeholder="Search products" aria-label="Search products">
+</div></header>
+
+<main>
+<div class="hero"><div class="wrap">
+  <h1>Find things worth buying, all in one place.</h1>
+  <p>We hand-pick fashion, beauty and home finds, then send you to our partner stores to buy.</p>
+  <a class="btn" href="shop.html">Browse Products</a>
+</div></div>
+
+<section><div class="wrap">
+  <h2>Popular Categories</h2><p class="sub">Start with what you love.</p>
+  <div class="cats" id="catGrid"></div>
+</div></section>
+
+<section><div class="wrap">
+  <h2>Featured Picks</h2><p class="sub">Our editor's selections (demo items).</p>
+  <div class="grid" id="featuredGrid"></div>
+</div></section>
+
+<section><div class="wrap"><div class="promo">
+  <h2>Zavora collections coming soon</h2>
+  <p>New picks added regularly. Check back for guides and "best of" lists.</p>
+</div></div></section>
+
+<section><div class="wrap">
+  <h2>New Arrivals</h2><p class="sub">Freshly added (demo items).</p>
+  <div class="grid" id="newGrid"></div>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <div class="cols">
+    <div><h4>Zavora</h4><p>A shopping discovery website. We are not a store; purchases happen on partner stores.</p></div>
+    <div><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+    <div><h4>Legal</h4><ul><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms &amp; Conditions</a></li><li><a href="affiliate-disclosure.html">Affiliate Disclosure</a></li></ul></div>
+  </div>
+  <p class="disc">As an affiliate, we may earn a commission from qualifying purchases made through links on this site, at no extra cost to you. Prices and availability are shown on the partner store. &copy; <span id="y"></span> Zavora.</p>
+</div></footer>
+<script>document.getElementById("y").textContent=new Date().getFullYear()</script>
+</body>
+</html>

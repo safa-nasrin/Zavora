@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Shop All | Zavora</title>
+<meta name="description" content="Browse all curated picks by category. Search and filter products.">
+<meta property="og:title" content="Shop All | Zavora">
+<link rel="stylesheet" href="style.css">
+<script src="products.js" defer></script>
+</head>
+<body>
+<div class="banner">Demo content: sample products only. Affiliate disclosure: we may earn a commission from qualifying purchases.</div>
+<header><div class="wrap nav">
+  <a class="logo" href="index.html">Zav<span>ora</span></a>
+  <nav><ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="shop.html">Shop All</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul></nav>
+  <input id="siteSearch" class="search" type="search" placeholder="Search products" aria-label="Search products">
+</div></header>
+
+<main><section><div class="wrap">
+  <h1 style="font-size:38px;margin-bottom:8px">Shop All</h1>
+  <p class="sub">Browse and filter our picks.</p>
+  <div class="filters">
+    <input id="q" type="search" placeholder="Filter by name" aria-label="Filter by name">
+    <select id="catFilter" aria-label="Category"></select>
+  </div>
+  <div class="grid" id="shopGrid"></div>
+</div></section></main>
+
+<footer><div class="wrap">
+  <div class="cols">
+    <div><h4>Zavora</h4><p>A shopping discovery website. We are not a store; purchases happen on partner stores.</p></div>
+    <div><h4>Company</h4><ul><li><a href="about.html">About Us</a></li><li><a href="contact.html">Contact Us</a></li></ul></div>
+    <div><h4>Legal</h4><ul><li><a href="privacy.html">Privacy Policy</a></li><li><a href="terms.html">Terms &amp; Conditions</a></li><li><a href="affiliate-disclosure.html">Affiliate Disclosure</a></li></ul></div>
+  </div>
+  <p class="disc">As an affiliate, we may earn a commission from qualifying purchases made through links on this site, at no extra cost to you. Prices and availability are shown on the partner store. &copy; <span id="y"></span> Zavora.</p>
+</div></footer>
+<script>document.getElementById("y").textContent=new Date().getFullYear()</script>
+</body>
+</html>
